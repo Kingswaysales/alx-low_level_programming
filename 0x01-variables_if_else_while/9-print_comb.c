@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *  main - prints all combination of single digits
- *  Return: Always 0
+ *  main - prints a series of digits with commas
+ *  Return: Alwys(Success);
  */
 int main(void)
 {
@@ -19,6 +19,8 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
+	}
 	putchar('\n');
+
 	return (0);
 }
