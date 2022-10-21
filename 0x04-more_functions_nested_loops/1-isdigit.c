@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _isdigit - checks if a char is a digit
- * @c: int to be checked
+ * _isdigit - Checks if a char is a digit
+ * @c: The number to be checked
  * Return: 1 if c is a digit 0 otherwise
  */
 
@@ -10,10 +10,10 @@ int _isdigit(int c)
 {
 	if (c >= '0' && <= '9')
 	{
-		return (1);
+	return (1);
 	}
 	else
 	{
-		return (0);
+	return (0);
 	}
 }
