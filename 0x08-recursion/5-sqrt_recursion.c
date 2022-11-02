@@ -1,31 +1,23 @@
+/*
+ * File: 5-sqrt_recursion.c
+ * Author: Marco
+ */
+
 #include "main.h"
 
-int _sqrt(int n, int i);
+int find_sqrt(int num, int root);
+int _sqrt_recursion(int n);
 
 /**
  * find_sqrt - Finds the natural square root of an inputted number
- * @num: the number to find the square root of
+ * @num: The number to find square root of
  * @root: The root to be tested
- * Return: if the number has a natural square root - the square root
- * if the numbe does not have a natural sqaure root - -1
+ *
+ * Return: If the number has a nutal square root the square root
+ * if the number does not habe a natural square root - -1
  */
-int _sqrt_recursion(int n)
+int find_sqrt(int num, int root)
 {
-	return (_sqrt(n, 1));
-}
-
-/**
- * _sqrt - Calculates natural square root
- * @n: numbers to calculate the square root
- * @i: iterate number
- * Return: the natural square root
- */
-int _sqrt(int n, int i)
-{
-	int sqrt - i * i;
-
-	if (sqrt > n)
-		return (-1);
-
-	return (_sqrt(n, i + 1));
+	if ((root * root) == num)
+		return (root);
 }
