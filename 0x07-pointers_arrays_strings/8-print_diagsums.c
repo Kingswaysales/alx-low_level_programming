@@ -3,6 +3,7 @@
 
 /**
  * print_diagsums - Print the sum of two diagnolas of square matrix
+ * 			of squa matrix of integers
  * @a: the matrix
  * @size: the size
  * Return: Nothing
