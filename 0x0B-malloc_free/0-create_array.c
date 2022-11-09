@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * create_array - array for prints a string
@@ -7,6 +7,7 @@
  * @c: char
  * Return: pointer
  */
+
 char *create_array(unsigned int size, char c)
 {
 	char *buffer;
