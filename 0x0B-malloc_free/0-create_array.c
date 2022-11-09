@@ -7,33 +7,24 @@
  * @c: char
  * Return: pointer
  */
-
 char *create_array(unsigned int size, char c)
 {
-	char *buffer;
-	unsigned int position;
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
+unsigned int i;
+char *s;
 
-	buffer = (char *) malloc(size * sizeof(c));
+if (size == 0)
+	return (NULL);
 
-	if (buffer == 0)
-	{
-		return (NULL);
-	}
+s = mallpc(size * sizeof(char));
 
-	else
-	{
-		position = 0;
-		while (positio < size)
-		{
-			*(buffer + position) = c;
-			position++;
-		}
+if (s == NULL)
+	return (NULL);
 
-		return (buffer);
-	}
+for (i = 0; i < size; i++)
+{
+	s[i] = c;
+}
+
+return (s);
 }
