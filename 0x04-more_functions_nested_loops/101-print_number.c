@@ -1,34 +1,30 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
-int _putchar(char c);
 
 /**
- * print_number - prints an integer
- * @n: params an integer
- * Return: returns nothing
+ * print_number - prints a number using _putchar
+ * @n: number to print
  */
 void print_number(int n)
 {
+	unsigned int un;
+	int tens;
 
-	unsigned int n1 = 0;
-
-	if  (n < 0)
+	tens = 1;
+	if (n < 0)
 	{
-		n1 = -n;
+		un = -n;
 		_putchar('-');
 	}
-
 	else
 	{
-		n1 = n;
+		un = n;
 	}
-
-	if (n1 / 10)
+	while (un / tens >= 10)
+		tens *= 10;
+	while (tens > 0)
 	{
-		print_number(n1 / 10);
+		_putchar((un / tens) + '0');
+		un %= tens;
+		tens /= 10;
 	}
-
-	_putchar((n1 % 10) + '0');
 }
